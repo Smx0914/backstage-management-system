@@ -30,5 +30,7 @@ export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<Ro
   function_tab: () => import("@/views/function/tab/index.vue"),
   "function_toggle-auth": () => import("@/views/function/toggle-auth/index.vue"),
   home: () => import("@/views/home/index.vue"),
+  "test-base-management_test-base": () => import("@/views/test-base-management/test-base/index.vue"),
+  "test-base-management_test-questions": () => import("@/views/test-base-management/test-questions/index.vue"),
   "user-center": () => import("@/views/user-center/index.vue"),
 };

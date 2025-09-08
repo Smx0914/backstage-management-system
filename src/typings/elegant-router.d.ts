@@ -38,6 +38,9 @@ declare module "@elegant-router/types" {
     "home": "/home";
     "iframe-page": "/iframe-page/:url";
     "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?";
+    "test-base-management": "/test-base-management";
+    "test-base-management_test-base": "/test-base-management/test-base";
+    "test-base-management_test-questions": "/test-base-management/test-questions";
     "user-center": "/user-center";
   };
 
@@ -90,6 +93,7 @@ declare module "@elegant-router/types" {
     | "home"
     | "iframe-page"
     | "login"
+    | "test-base-management"
     | "user-center"
   >;
 
@@ -124,6 +128,8 @@ declare module "@elegant-router/types" {
     | "function_tab"
     | "function_toggle-auth"
     | "home"
+    | "test-base-management_test-base"
+    | "test-base-management_test-questions"
     | "user-center"
   >;
 

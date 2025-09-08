@@ -47,7 +47,7 @@ export const generatedRoutes: GeneratedRoute[] = [
       title: 'about',
       i18nKey: 'route.about',
       icon: 'fluent:book-information-24-regular',
-      order: 10
+      order: 9999
     }
   },
   {
@@ -203,6 +203,41 @@ export const generatedRoutes: GeneratedRoute[] = [
       constant: true,
       hideInMenu: true
     }
+  },
+  {
+    name: 'test-base-management',
+    path: '/test-base-management',
+    component: 'layout.base',
+    meta: {
+      title: 'test-base-management',
+      i18nKey: 'route.test-base-management',
+      icon: 'fluent:book-24-regular',
+      order: 10
+    },
+    children: [
+      {
+        name: 'test-base-management_test-base',
+        path: '/test-base-management/test-base',
+        component: 'view.test-base-management_test-base',
+        meta: {
+          title: 'test-base-management_test-base',
+          i18nKey: 'route.test-base-management_test-base',
+          icon: 'fluent:book-open-24-regular',
+          order: 1
+        }
+      },
+      {
+        name: 'test-base-management_test-questions',
+        path: '/test-base-management/test-questions',
+        component: 'view.test-base-management_test-questions',
+        meta: {
+          title: 'test-base-management_test-questions',
+          i18nKey: 'route.test-base-management_test-questions',
+          icon: 'fluent:notepad-24-regular',
+          order: 2
+        }
+      }
+    ]
   },
   {
     name: 'user-center',
